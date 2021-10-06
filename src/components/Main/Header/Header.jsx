@@ -6,7 +6,7 @@ const Header = () => {
         <div className="header__logo col-4">Logo</div>
         <div className="header__search-form col-4">
           <div className="input-group mb-3">
-            <input type="text" class="form-control" placeholder="..." aria-label="Recipient's username" aria-describedby="basic-addon2"></input>
+            <input type="text" className="form-control" placeholder="..." aria-label="Recipient's username" aria-describedby="basic-addon2"></input>
             <span className="input-group-text" id="basic-addon2">
               Search
             </span>
