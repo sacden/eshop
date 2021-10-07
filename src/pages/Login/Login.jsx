@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Login = () => {
   return (
-    <div className="login">
+    <div className="login container-fluid row col-4">
       <form>
         <div className="mb-3">
           <label htmlFor="exampleInputEmail1" className="form-label">

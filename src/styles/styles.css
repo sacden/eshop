@@ -4,7 +4,22 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.page.container-fluid {
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
+
+.container {
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+  margin-right: var(--bs-gutter-x, 1.5rem) !important;
+  margin-left: var(--bs-gutter-x, 1.5rem) !important;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.btn {
+  font-size: 14px !important;
 }

@@ -6,7 +6,7 @@ import classes from "./Content.module.scss";
 
 const Content = () => {
   return (
-    <div className={classes.content}>
+    <div>
       <Route path="/" exact component={Home} />
       <Route path="/login" component={Login} />
       <Route path="/registration" component={Registration} />
