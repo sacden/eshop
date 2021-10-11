@@ -23,3 +23,56 @@ code {
 .btn {
   font-size: 14px !important;
 }
+
+#main_menu {
+  background-color: #f9f9fb;
+}
+
+.card {
+  box-shadow: 0 1px 8px rgb(0 0 0 / 10%);
+  border-radius: 5px !important;
+}
+
+.col-md-9 {
+  width: 100% !important;
+}
+
+#h6_green_left {
+  color: green;
+  display: inline-block;
+  width: 50%;
+  font-weight: 600;
+}
+
+#h6_green_right {
+  width: 50%;
+  display: inline-block;
+  text-align: right;
+  padding-right: 5px;
+}
+
+.card-xfooter {
+  width: 100%;
+
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.form-control:focus {
+  box-shadow: none !important;
+}
+
+#form_select {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+@media (min-width: 1200px) {
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 96% !important;
+  }
+}

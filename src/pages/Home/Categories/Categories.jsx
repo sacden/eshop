@@ -6,9 +6,12 @@ const Categories = () => {
   return (
     <div className="home__categories col-3">
       <ul className="list-group">
+        <li className="list-group-item" id="main_menu" key="0">
+          <i className="bi bi-list"></i> Menu
+        </li>
         {categories.map((el) => (
           <li className="list-group-item" key={el.id}>
-            {el.category}
+            <i className={el.icon}></i> {el.category}
           </li>
         ))}
       </ul>

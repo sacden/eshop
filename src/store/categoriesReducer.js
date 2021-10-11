@@ -1,10 +1,10 @@
 const defaultState = {
   categories: [
-    { id: 1, category: "Phones" },
-    { id: 2, category: "PCs" },
-    { id: 3, category: "Notebooks" },
-    { id: 4, category: "Monitors" },
-    { id: 5, category: "Tablets" },
+    { id: 1, category: "Phones", icon: "bi bi-phone" },
+    { id: 2, category: "Smartwatches", icon: "bi bi-smartwatch" },
+    { id: 3, category: "Cameras", icon: "bi bi-camera-video" },
+    { id: 4, category: "Photocameras", icon: "bi bi-camera" },
+    { id: 5, category: "Tablets", icon: "bi bi-tablet" },
   ],
 };
 export const categoriesReducer = (state = defaultState, action) => {
