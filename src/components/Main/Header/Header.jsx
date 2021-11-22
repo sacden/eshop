@@ -3,7 +3,7 @@ import ProductSearch from "../../ProductSearch";
 import logoimage from "../../../styles/img/logo.png";
 import classes from "./Header.module.scss";
 import React, { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 
 const Header = () => {
   const [searchQuery, setSearchQuery] = useState("");

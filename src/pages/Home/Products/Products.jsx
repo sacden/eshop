@@ -5,12 +5,8 @@ import ProductSorting from "../../../components/ProductSorting";
 const Products = () => {
   const dispatch = useDispatch();
   const products = useSelector((state) => state.products.products);
-  //const [selectedSort, setSelectedSort] = useState("");
-  const [searchQuery, setsearchQuery] = useState("");
 
   const sortProducts = (sortBy) => {
-    //dispatch({ type: "SORT_PRODUCTS_BY_PRICE_MIN", payload: sortBy });
-
     switch (sortBy) {
       case "priceMin":
         dispatch({ type: "SORT_PRODUCTS_BY_PRICE_MIN", payload: sortBy });

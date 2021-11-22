@@ -1,6 +1,7 @@
 import classes from "./ProductSearch.module.scss";
+import React, { useState } from "react";
 
-const ProductSearch = ({ value, onChange, setSearchQuery }) => {
+const ProductSearch = ({ searchQuery, onChange, setSearchQuery }) => {
   return (
     <div className="header__search-form col-4">
       <div className="input-group mb-3">
@@ -8,9 +9,8 @@ const ProductSearch = ({ value, onChange, setSearchQuery }) => {
           Find products
         </button>
         <input
-          value={value}
-          onChange={(e) => setSearchQuery(e.target.value)}
-          //   onChange={(event) => onChange(event.target.value)}
+          value={searchQuery}
+          onChange={(event) => setSearchQuery(event.target.value)}
           className="form-control"
           id={classes.search_dropdown_input}
           type="text"
