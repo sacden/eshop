@@ -1,5 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import React, { useState } from "react";
+
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import ProductSorting from "../../../components/ProductSorting";
 
 const Products = () => {
@@ -39,8 +41,9 @@ const Products = () => {
         <div className="card mb-3  mx-2" style={{ width: "31%" }} key={product.productNumber}>
           <div className="row g-0">
             <div className="col-md-9 ">
-              <img src={`${process.env.PUBLIC_URL}/assets/images/phones/${product.photo}`} className="card-img-top " alt={product.model} />
-
+              <Link to={`/product/${product.id}`}>
+                <img src={`${process.env.PUBLIC_URL}/assets/images/phones/${product.photo}`} className="card-img-top " alt={product.model} />
+              </Link>
               <div className="card-body">
                 <h5 className="card-title">{product.model}</h5>
                 <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
